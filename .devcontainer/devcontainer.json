@@ -12,8 +12,7 @@
       "version": "latest"
     }
   },
-  "postStartCommand": "bash /usr/local/bin/start.sh",
-  "postAttachCommand": "gh codespace ports visibility 443:public -c $CODESPACE_NAME && show-link.sh",
+  "postAttachCommand": "gh codespace ports visibility 443:public -c $CODESPACE_NAME && bash /usr/local/bin/start.sh",
   "portsAttributes": {
     "443": {
       "label": "pixel-path-7d8d63",
