@@ -4,7 +4,6 @@ tmux kill-session -t g2ray 2>/dev/null || true
 tmux new-session -d -s g2ray
 tmux send-keys -t g2ray "sudo /usr/local/bin/xray run -c /etc/xray/g2ray.json &>/tmp/xray.log" Enter
 sleep 2
-show-link.sh
 
 # Self-ping keepalive — hit the Codespace's own public URL every 50s.
 # Outbound pings (e.g. github.com) do NOT reset the Codespace idle timer;
